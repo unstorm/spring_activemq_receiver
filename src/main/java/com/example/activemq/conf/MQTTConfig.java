@@ -30,7 +30,7 @@ public class MQTTConfig {
   public MqttPahoClientFactory mqttClientFactory() {
       DefaultMqttPahoClientFactory factory = new DefaultMqttPahoClientFactory();
       MqttConnectOptions options = new MqttConnectOptions();
-      options.setServerURIs(new String[]{"tcp://192.168.219.131:1883"});
+      options.setServerURIs(new String[]{"tcp://192.168.32.129:1883"});
       options.setUserName("admin");
       options.setPassword("admin".toCharArray());
       factory.setConnectionOptions(options);
